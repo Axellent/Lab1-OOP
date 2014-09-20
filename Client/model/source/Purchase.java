@@ -4,7 +4,7 @@ public class Purchase {
     /**
      * @attribute
      */
-    private Real totalPrice;
+    private double totalPrice;
 
     private void addProduct(Product product) {
     }

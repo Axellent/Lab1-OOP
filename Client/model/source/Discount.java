@@ -9,7 +9,7 @@ public class Discount {
     /**
      * @attribute
      */
-    private Real amount;
+    private double amount;
 
     /**
      * @attribute
@@ -21,7 +21,8 @@ public class Discount {
      */
     private String expirationDate;
 
-    public Real getDiscount(String code, ProductLine productLine) {
+    public double getDiscount(String code, ProductLine productLine) {
+        return 0;
     }
 
     public void setDiscount(String newCode, ProductLine newProductLine) {
@@ -31,23 +32,27 @@ public class Discount {
     }
 
     public String getDescr() {
+        return "";
     }
 
     public String getExpirationDate() {
+        return "";
     }
 
     public void setExpirationDate(String newExpirationDate) {
     }
 
     public String getDiscountCode() {
+        return "";
     }
 
     public void setDiscountCode(String newDiscountCode) {
     }
 
-    public Real getAmount() {
+    public double getAmount() {
+        return 0;
     }
 
-    public void setAmount(Real newAmount) {
+    public void setAmount(double newAmount) {
     }
 }

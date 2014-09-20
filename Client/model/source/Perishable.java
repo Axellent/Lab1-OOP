@@ -7,6 +7,7 @@ public class Perishable extends Product {
     private String bestBeforeDate;
 
     public String getBestBeforeDate() {
+        return "";
     }
 
     public void setBestBeforeDate(String newBestBeforeDate) {

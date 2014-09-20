@@ -14,15 +14,18 @@ public class Product {
     /**
      * @attribute
      */
-    private Real price;
+    private double price;
 
     public Integer getEAN() {
+        return 0;
     }
 
     public String getDescr() {
+        return "";
     }
 
-    public Real getPrice() {
+    public double getPrice() {
+        return 0;
     }
 
     public void setEAN(Integer newEAN) {
@@ -31,6 +34,6 @@ public class Product {
     public void setDescr(String newDescr) {
     }
 
-    public void setPrice(Real newPrice) {
+    public void setPrice(double newPrice) {
     }
 }

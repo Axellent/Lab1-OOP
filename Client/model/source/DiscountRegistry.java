@@ -7,6 +7,7 @@ public class DiscountRegistry {
     private Discount discount;
 
     public Discount getDiscount(String code) {
+        return null;
     }
 
     public void addDiscount(String code, Discount discount) {

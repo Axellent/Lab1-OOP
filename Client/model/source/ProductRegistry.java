@@ -7,6 +7,7 @@ public class ProductRegistry {
     private Integer totalProducts;
 
     public Product getProductFromReg(Integer EAN) {
+        return  null;
     }
 
     public void delProductFromReg(Product product) {

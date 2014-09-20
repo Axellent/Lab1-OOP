@@ -77,7 +77,7 @@
             <hash>
                <url n="content-folder-url" path="model/client/"/>
                <list n="pattern-filters">
-                  <string v="+client/Main.java"/>
+                  <string v="+client/"/>
                </list>
                <list n="url-path">
                   <url path="model/"/>
@@ -87,6 +87,22 @@
                <url n="content-folder-url" path="model/source/"/>
                <list n="pattern-filters">
                   <string v="+source/Main.java"/>
+                  <string v="+source/Non_Perishable.java"/>
+                  <string v="+source/XforYifZ.java"/>
+                  <string v="+source/Perishable.java"/>
+                  <string v="+source/ProductLine.java"/>
+                  <string v="+source/Receipt.java"/>
+                  <string v="+source/package.uml_pck"/>
+                  <string v="+source/Xpercent.java"/>
+                  <string v="+source/savePurchase.java"/>
+                  <string v="+source/Discount.java"/>
+                  <string v="+source/Register.java"/>
+                  <string v="+source/Purchase.java"/>
+                  <string v="+source/DiscountRegistry.java"/>
+                  <string v="+source/Product.java"/>
+                  <string v="+source/XifY.java"/>
+                  <string v="+source/XforY.java"/>
+                  <string v="+source/ProductRegistry.java"/>
                </list>
                <list n="url-path">
                   <url path="model/"/>
@@ -105,48 +121,11 @@
       </hash>
    </hash>
    <hash n="oracle.jdevimpl.config.JProjectLibraries">
-      <list n="exportedReferences">
-         <hash>
-            <value n="id" v="Source"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="Source1"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-      </list>
+      <list n="exportedReferences"/>
       <hash n="internalDefinitions">
-         <list n="libraryDefinitions">
-            <hash>
-               <list n="classPath">
-                  <url path="classes/source/"/>
-               </list>
-               <value n="deployedByDefault" v="true"/>
-               <value n="description" v="Source"/>
-               <value n="id" v="Source"/>
-               <value n="locked" v="true"/>
-            </hash>
-            <hash>
-               <list n="classPath">
-                  <url path="model/source/"/>
-               </list>
-               <value n="deployedByDefault" v="true"/>
-               <value n="description" v="Source1"/>
-               <value n="id" v="Source1"/>
-               <value n="locked" v="true"/>
-            </hash>
-         </list>
+         <list n="libraryDefinitions"/>
       </hash>
-      <list n="libraryReferences">
-         <hash>
-            <value n="id" v="Source"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="Source1"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-      </list>
+      <list n="libraryReferences"/>
    </hash>
    <hash n="oracle.jdevimpl.config.JProjectPaths">
       <url n="outputDirectory" path="classes/"/>

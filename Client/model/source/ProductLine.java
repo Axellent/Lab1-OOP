@@ -14,7 +14,7 @@ public class ProductLine {
     /**
      * @attribute
      */
-    private Real priceSum;
+    private double priceSum;
 
     public void setAmount(Integer newAmount) {
     }
@@ -23,8 +23,10 @@ public class ProductLine {
     }
 
     public Integer getAmount() {
+        return 0;
     }
 
     public Product getProduct() {
+        return null;
     }
 }
