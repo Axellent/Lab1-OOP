@@ -19,7 +19,7 @@
     isReadOnly='false'
     isStatic='false'
     isUnique='true'
-    name='endOrderLine'
+    name=''
     aggregation='none'>
    <association href='urn:uuid:359649ab-1fcd-4b47-8da0-c1457355ee81'/>
    <type href='urn:uuid:d936e1ed-e8f9-4a22-8911-18ee03e68835'/>
@@ -39,7 +39,7 @@
     isReadOnly='false'
     isStatic='false'
     isUnique='true'
-    name='endCart'
+    name='Contains'
     aggregation='none'>
    <association href='urn:uuid:359649ab-1fcd-4b47-8da0-c1457355ee81'/>
    <type href='urn:uuid:268fa593-f9c8-4beb-aff5-02d6b3a41861'/>

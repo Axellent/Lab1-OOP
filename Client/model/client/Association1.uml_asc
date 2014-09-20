@@ -19,7 +19,7 @@
     isReadOnly='false'
     isStatic='false'
     isUnique='true'
-    name='endProduct'
+    name=''
     aggregation='none'>
    <association href='urn:uuid:46701494-b72a-45d4-8978-2b30f91864d3'/>
    <type href='urn:uuid:3f61a599-3783-4b66-a8b1-6825e4f93721'/>
@@ -39,7 +39,7 @@
     isReadOnly='false'
     isStatic='false'
     isUnique='true'
-    name='endproductRegistry'
+    name='Contains'
     aggregation='none'>
    <association href='urn:uuid:46701494-b72a-45d4-8978-2b30f91864d3'/>
    <type href='urn:uuid:3734a575-db03-419f-8ced-31ff77a0e925'/>

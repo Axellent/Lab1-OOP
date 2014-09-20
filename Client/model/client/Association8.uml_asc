@@ -20,12 +20,12 @@
     isReadOnly='false'
     isStatic='false'
     isUnique='true'
-    name='endPurchase'
+    name=''
     aggregation='none'>
    <association href='urn:uuid:2e26b7e7-55ad-49e6-9972-4649da8a0e26'/>
    <type href='urn:uuid:268fa593-f9c8-4beb-aff5-02d6b3a41861'/>
    <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:b6c39c32-2fb2-49d5-a23c-5e5cb72ca00b'
-     value='1'
+     value='0'
      visibility='public'/>
    <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:d25ee796-7f05-4f34-89de-eb9862e673e4'
      value='1'
@@ -40,15 +40,15 @@
     isReadOnly='false'
     isStatic='false'
     isUnique='true'
-    name='endRegister'
+    name=''
     aggregation='composite'>
    <association href='urn:uuid:2e26b7e7-55ad-49e6-9972-4649da8a0e26'/>
    <type href='urn:uuid:b868c039-71b9-49b3-9d36-5f78c734f0c2'/>
    <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:33893ee8-44b2-4037-97f1-9a13a2451eb4'
-     value='0'
+     value='1'
      visibility='public'/>
    <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:c944c8ad-a07c-4167-a25f-0955188b6e2c'
-     value='*'
+     value='1'
      visibility='public'/>
   </ownedEnd>
  </uml:Association>

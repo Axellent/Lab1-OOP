@@ -7,5 +7,123 @@
    isFinalSpecialization='false'
    isLeaf='false'
    name='Register'
-   visibility='public'/>
+   visibility='public'>
+  <ownedAttribute xmi:type='uml:Property' xmi:uuid='urn:uuid:aed23db4-8642-4745-bc77-0d5670f892f9'
+    isDerived='false'
+    isDerivedUnion='false'
+    isID='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='productRegistry'
+    aggregation='none'
+    visibility='private'>
+   <type href='urn:uuid:3734a575-db03-419f-8ced-31ff77a0e925'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:6ece2ccc-f523-4c55-9399-8660889ced8e'
+     value='1'
+     visibility='public'/>
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:403844cc-5ec6-457d-9b72-ff5d8f392137'
+     value='1'
+     visibility='public'/>
+  </ownedAttribute>
+  <ownedAttribute xmi:type='uml:Property' xmi:uuid='urn:uuid:2f875d39-00eb-426a-81d7-49d2fce3d780'
+    isDerived='false'
+    isDerivedUnion='false'
+    isID='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='discountRegistry'
+    aggregation='none'
+    visibility='private'>
+   <type href='urn:uuid:2db8368b-3ba8-4e90-b307-e18ce1fa73df'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:437d9435-4962-45ca-a433-c93fbbcd65e5'
+     value='1'
+     visibility='public'/>
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:5e7c0233-1f51-426d-b4cf-9307ff3a0f2d'
+     value='1'
+     visibility='public'/>
+  </ownedAttribute>
+  <ownedOperation xmi:type='uml:Operation' xmi:uuid='urn:uuid:eac849d2-e1c4-47f6-ac9b-d74697ccc7bc'
+    isAbstract='false'
+    isLeaf='false'
+    isQuery='false'
+    isStatic='false'
+    name='scanProduct'
+    concurrency='sequential'
+    visibility='public'>
+   <ownedParameter xmi:type='uml:Parameter' xmi:uuid='urn:uuid:8487d80a-5766-41af-93e3-030e7d9325d2'
+     isException='false'
+     isOrdered='false'
+     isStream='false'
+     isUnique='true'
+     name='product'
+     direction='in'>
+    <type href='urn:uuid:3f61a599-3783-4b66-a8b1-6825e4f93721'/>
+   </ownedParameter>
+  </ownedOperation>
+  <ownedOperation xmi:type='uml:Operation' xmi:uuid='urn:uuid:8b601b5d-8cb6-4d80-9f6e-ab1aee1ded2a'
+    isAbstract='false'
+    isLeaf='false'
+    isQuery='false'
+    isStatic='false'
+    name='remProductFromLine'
+    concurrency='sequential'
+    visibility='public'>
+   <ownedParameter xmi:type='uml:Parameter' xmi:uuid='urn:uuid:674ae406-5fd6-48ba-a844-03e3c4409828'
+     isException='false'
+     isOrdered='false'
+     isStream='false'
+     isUnique='true'
+     name='line'
+     direction='in'>
+    <type href='urn:uuid:d936e1ed-e8f9-4a22-8911-18ee03e68835'/>
+   </ownedParameter>
+   <ownedParameter xmi:type='uml:Parameter' xmi:uuid='urn:uuid:47733ced-ae4e-4c6c-a1dc-d762b634fa88'
+     isException='false'
+     isOrdered='false'
+     isStream='false'
+     isUnique='true'
+     name='amount'
+     direction='in'>
+    <type href='http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#Integer'/>
+   </ownedParameter>
+  </ownedOperation>
+  <ownedOperation xmi:type='uml:Operation' xmi:uuid='urn:uuid:3ade4feb-f101-496a-bd15-bf5f466f01ce'
+    isAbstract='false'
+    isLeaf='false'
+    isQuery='false'
+    isStatic='false'
+    name='finishPurchase'
+    concurrency='sequential'
+    visibility='public'/>
+  <ownedOperation xmi:type='uml:Operation' xmi:uuid='urn:uuid:ad8b3374-a149-4a55-8c5b-69a9a1ed5fab'
+    isAbstract='false'
+    isLeaf='false'
+    isQuery='false'
+    isStatic='false'
+    name='cancelPurchase'
+    concurrency='sequential'
+    visibility='public'/>
+  <ownedOperation xmi:type='uml:Operation' xmi:uuid='urn:uuid:8b9dd6f6-875a-4314-8e2f-4f87ce46c7ea'
+    isAbstract='false'
+    isLeaf='false'
+    isQuery='false'
+    isStatic='false'
+    name='createReciept'
+    concurrency='sequential'
+    visibility='private'/>
+  <ownedOperation xmi:type='uml:Operation' xmi:uuid='urn:uuid:b5b60f83-c04e-4fb1-a1b9-d8290b9768e9'
+    isAbstract='false'
+    isLeaf='false'
+    isQuery='false'
+    isStatic='false'
+    name='updateRegistries'
+    concurrency='sequential'
+    visibility='public'/>
+ </uml:Class>
 </xmi:XMI>

@@ -6,6 +6,11 @@
    isActive='false'
    isFinalSpecialization='false'
    isLeaf='false'
-   name='Class1'
-   visibility='public'/>
+   name='Non_Perishable'
+   visibility='public'>
+  <generalization xmi:type='uml:Generalization' xmi:uuid='urn:uuid:7dc29a2a-f51a-41ab-8c01-daada70392ca'
+    isSubstitutable='true'>
+   <general href='urn:uuid:3f61a599-3783-4b66-a8b1-6825e4f93721'/>
+  </generalization>
+ </uml:Class>
 </xmi:XMI>

@@ -6,6 +6,33 @@
    isActive='false'
    isFinalSpecialization='false'
    isLeaf='false'
-   name='Class1'
-   visibility='public'/>
+   name='Receipt'
+   visibility='public'>
+  <ownedOperation xmi:type='uml:Operation' xmi:uuid='urn:uuid:26dec185-5d73-42b0-8450-c562135ee936'
+    isAbstract='false'
+    isLeaf='false'
+    isQuery='false'
+    isStatic='false'
+    name=''
+    concurrency='sequential'
+    visibility='public'>
+   <ownedParameter xmi:type='uml:Parameter' xmi:uuid='urn:uuid:e1bf81ec-1373-4e47-ba31-766732e3d7e8'
+     isException='false'
+     isOrdered='false'
+     isStream='false'
+     isUnique='true'
+     name='purchase'
+     direction='in'>
+    <type href='urn:uuid:268fa593-f9c8-4beb-aff5-02d6b3a41861'/>
+   </ownedParameter>
+  </ownedOperation>
+  <ownedOperation xmi:type='uml:Operation' xmi:uuid='urn:uuid:3c43a8a5-d371-42c1-829a-e48e33a342c1'
+    isAbstract='false'
+    isLeaf='false'
+    isQuery='false'
+    isStatic='false'
+    name='printReceipt'
+    concurrency='sequential'
+    visibility='public'/>
+ </uml:Class>
 </xmi:XMI>

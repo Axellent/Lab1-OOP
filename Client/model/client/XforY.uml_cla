@@ -6,6 +6,11 @@
    isActive='false'
    isFinalSpecialization='false'
    isLeaf='false'
-   name='Class2'
-   visibility='public'/>
+   name='XforY'
+   visibility='public'>
+  <generalization xmi:type='uml:Generalization' xmi:uuid='urn:uuid:db1962b4-8b7b-4357-b24d-44e5a58c6664'
+    isSubstitutable='true'>
+   <general href='urn:uuid:6af6e539-f6d2-4857-b6fc-01c9ce1b0494'/>
+  </generalization>
+ </uml:Class>
 </xmi:XMI>

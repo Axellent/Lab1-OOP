@@ -19,7 +19,7 @@
           <contained xmi:type='DI:GraphNode' xmi:id='id78c844a2-5d1a-43a3-a865-fd89cbf821f2'>
             <contained xmi:type='DI:GraphNode' xmi:id='id8ad16fe4-cad5-4fb1-a412-83be8f73a8b3'>
               <property xmi:type='DI:Property' key='id' value='classifierSingleCell'/>
-              <property xmi:type='DI:Property' key='preferredWidth' value='112.0'/>
+              <property xmi:type='DI:Property' key='preferredWidth' value='115.0'/>
               <property xmi:type='DI:Property' key='visible' value='true'/>
               <property xmi:type='DI:Property' key='editable' value='true'/>
               <property xmi:type='DI:Property' key='fixedWidth' value='false'/>
@@ -1164,7 +1164,7 @@
           <contained xmi:type='DI:GraphNode' xmi:id='id8779c441-e6c5-49ff-8450-794bf0174ebb'>
             <contained xmi:type='DI:GraphNode' xmi:id='id71ed8d1f-2302-4995-b944-3da80bd9a071'>
               <property xmi:type='DI:Property' key='id' value='classifierSingleCell'/>
-              <property xmi:type='DI:Property' key='preferredWidth' value='127.0'/>
+              <property xmi:type='DI:Property' key='preferredWidth' value='130.0'/>
               <property xmi:type='DI:Property' key='visible' value='true'/>
               <property xmi:type='DI:Property' key='editable' value='true'/>
               <property xmi:type='DI:Property' key='fixedWidth' value='false'/>
@@ -3693,7 +3693,7 @@
           <contained xmi:type='DI:GraphNode' xmi:id='ide6566c2a-29b5-4ec7-bed7-0d1fca24110f'>
             <contained xmi:type='DI:GraphNode' xmi:id='idb07d5c6a-2fc5-4bb0-b58c-3ae7ca65dbf3'>
               <property xmi:type='DI:Property' key='id' value='classifierSingleCell'/>
-              <property xmi:type='DI:Property' key='preferredWidth' value='158.0'/>
+              <property xmi:type='DI:Property' key='preferredWidth' value='161.0'/>
               <property xmi:type='DI:Property' key='visible' value='true'/>
               <property xmi:type='DI:Property' key='editable' value='true'/>
               <property xmi:type='DI:Property' key='fixedWidth' value='false'/>

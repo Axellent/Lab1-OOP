@@ -6,6 +6,11 @@
    isActive='false'
    isFinalSpecialization='false'
    isLeaf='false'
-   name='Class1'
-   visibility='public'/>
+   name='Xpercent'
+   visibility='public'>
+  <generalization xmi:type='uml:Generalization' xmi:uuid='urn:uuid:f1651738-69ef-493b-92ba-1ddfe7c8c992'
+    isSubstitutable='true'>
+   <general href='urn:uuid:6af6e539-f6d2-4857-b6fc-01c9ce1b0494'/>
+  </generalization>
+ </uml:Class>
 </xmi:XMI>

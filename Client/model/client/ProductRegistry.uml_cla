@@ -6,6 +6,91 @@
    isActive='false'
    isFinalSpecialization='false'
    isLeaf='false'
-   name='Class1'
-   visibility='public'/>
+   name='ProductRegistry'
+   visibility='public'>
+  <ownedAttribute xmi:type='uml:Property' xmi:uuid='urn:uuid:0c7c72bf-5008-409b-ab5e-c00d569edd18'
+    isDerived='false'
+    isDerivedUnion='false'
+    isID='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='totalProducts'
+    aggregation='none'
+    visibility='private'>
+   <type href='http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#Integer'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:f2c76c5f-6841-4556-9951-d48d2e5f9691'
+     value='1'
+     visibility='public'/>
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:4ea05a16-8fc7-4046-8a45-3df01a654a87'
+     value='1'
+     visibility='public'/>
+  </ownedAttribute>
+  <ownedAttribute xmi:type='uml:Property' xmi:uuid='urn:uuid:387c5587-3bdd-4a80-90c5-ad7f6dbac4aa'
+    isDerived='false'
+    isDerivedUnion='false'
+    isID='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='registry [0..*]'
+    aggregation='none'
+    visibility='private'>
+   <type href='urn:uuid:3f61a599-3783-4b66-a8b1-6825e4f93721'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:eb83a797-10b7-4926-9c1d-c6c8632281ef'
+     value='1'
+     visibility='public'/>
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:19845019-f44c-40e6-a7f4-a5be7a2ff93d'
+     value='1'
+     visibility='public'/>
+  </ownedAttribute>
+  <ownedOperation xmi:type='uml:Operation' xmi:uuid='urn:uuid:4ee632f4-f3e1-4c2b-9ebd-f89418169e4a'
+    isAbstract='false'
+    isLeaf='false'
+    isQuery='false'
+    isStatic='false'
+    name='getProductFromReg'
+    concurrency='sequential'
+    visibility='public'>
+   <ownedParameter xmi:type='uml:Parameter' xmi:uuid='urn:uuid:f1a9ec0a-dd24-45a1-ac24-bf2b5a612539'
+     isException='false'
+     isOrdered='false'
+     isStream='false'
+     isUnique='true'
+     name='EAN'
+     direction='in'>
+    <type href='http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#Integer'/>
+   </ownedParameter>
+   <ownedParameter xmi:type='uml:Parameter' xmi:uuid='urn:uuid:ccab0586-0bfa-4a91-841a-b04851d5c2b9'
+     isException='false'
+     isOrdered='false'
+     isStream='false'
+     isUnique='true'
+     direction='return'>
+    <type href='urn:uuid:3f61a599-3783-4b66-a8b1-6825e4f93721'/>
+   </ownedParameter>
+  </ownedOperation>
+  <ownedOperation xmi:type='uml:Operation' xmi:uuid='urn:uuid:d7bb44ee-717a-4f2d-a1c5-1ee092e69d87'
+    isAbstract='false'
+    isLeaf='false'
+    isQuery='false'
+    isStatic='false'
+    name='delProductFromReg'
+    concurrency='sequential'
+    visibility='public'>
+   <ownedParameter xmi:type='uml:Parameter' xmi:uuid='urn:uuid:3b818d94-af29-45e5-9f17-5a4ea41dc913'
+     isException='false'
+     isOrdered='false'
+     isStream='false'
+     isUnique='true'
+     name='product'
+     direction='in'>
+    <type href='urn:uuid:3f61a599-3783-4b66-a8b1-6825e4f93721'/>
+   </ownedParameter>
+  </ownedOperation>
+ </uml:Class>
 </xmi:XMI>

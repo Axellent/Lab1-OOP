@@ -20,7 +20,7 @@
     isReadOnly='false'
     isStatic='false'
     isUnique='true'
-    name='endsavePurchase'
+    name=''
     aggregation='none'>
    <association href='urn:uuid:4eab4f88-ac99-420a-ae93-a30fdf5dc5d2'/>
    <type href='urn:uuid:1873fdfb-6d50-4510-a419-e1b7138379b1'/>
@@ -40,15 +40,15 @@
     isReadOnly='false'
     isStatic='false'
     isUnique='true'
-    name='endCheckout'
+    name=''
     aggregation='composite'>
    <association href='urn:uuid:4eab4f88-ac99-420a-ae93-a30fdf5dc5d2'/>
-   <type href='urn:uuid:268fa593-f9c8-4beb-aff5-02d6b3a41861'/>
+   <type href='urn:uuid:b868c039-71b9-49b3-9d36-5f78c734f0c2'/>
    <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:1bcd4593-0993-4170-ac40-a4c1b5e31970'
-     value='0'
+     value='1'
      visibility='public'/>
    <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:b43b41ed-ee2c-4ee6-b37b-aca8b92645c8'
-     value='*'
+     value='1'
      visibility='public'/>
   </ownedEnd>
  </uml:Association>

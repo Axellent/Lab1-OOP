@@ -6,6 +6,66 @@
    isActive='false'
    isFinalSpecialization='false'
    isLeaf='false'
-   name='Class1'
-   visibility='public'/>
+   name='savePurchase'
+   visibility='public'>
+  <ownedAttribute xmi:type='uml:Property' xmi:uuid='urn:uuid:29089ada-d5f4-463b-8745-9a2ec2a93796'
+    isDerived='false'
+    isDerivedUnion='false'
+    isID='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='saveFile'
+    aggregation='none'
+    visibility='private'>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:cd8c30e0-82ca-4434-832f-80fb10ff80ff'
+     value='1'
+     visibility='public'/>
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:d5593f5e-bab7-4b7f-be97-0a7b5be63a53'
+     value='1'
+     visibility='public'/>
+  </ownedAttribute>
+  <ownedAttribute xmi:type='uml:Property' xmi:uuid='urn:uuid:9eafcb0d-2359-4b18-b8e7-4c1c1e2596cf'
+    isDerived='false'
+    isDerivedUnion='false'
+    isID='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='saveDate'
+    aggregation='none'
+    visibility='private'>
+   <type href='http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:a95c90f0-be9b-4c00-bd2f-017204649990'
+     value='1'
+     visibility='public'/>
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:067d9980-21d5-41bf-8289-d522b1608116'
+     value='1'
+     visibility='public'/>
+  </ownedAttribute>
+  <ownedAttribute xmi:type='uml:Property' xmi:uuid='urn:uuid:370da447-163e-4dbb-b58e-126f95df7f63'
+    isDerived='false'
+    isDerivedUnion='false'
+    isID='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='purchase'
+    aggregation='none'
+    visibility='private'>
+   <type href='urn:uuid:268fa593-f9c8-4beb-aff5-02d6b3a41861'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:7ce1b026-f87f-4bcb-811c-98cde57d275b'
+     value='1'
+     visibility='public'/>
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:3f7592b7-affe-45bc-8874-32aa4ee10b1b'
+     value='1'
+     visibility='public'/>
+  </ownedAttribute>
+ </uml:Class>
 </xmi:XMI>
