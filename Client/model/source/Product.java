@@ -5,6 +5,8 @@ public class Product {
      * @attribute
      */
     private Integer EAN;
+    
+    private String name;
 
     /**
      * @attribute
@@ -19,6 +21,10 @@ public class Product {
     public Integer getEAN() {
         return 0;
     }
+    
+    public String getName(){
+        return "";
+    }
 
     public String getDescr() {
         return "";
@@ -29,6 +35,9 @@ public class Product {
     }
 
     public void setEAN(Integer newEAN) {
+    }
+    
+    public void setName(String newName) {
     }
 
     public void setDescr(String newDescr) {

@@ -9,24 +9,40 @@ public class ProductLine {
     /**
      * @attribute
      */
-    private Integer amount;
+    private int amount;
 
     /**
      * @attribute
      */
     private double priceSum;
-
-    public void setAmount(Integer newAmount) {
+    
+    public ProductLine(Product newProduct, int newAmount, double newPriceSum){
+        product = newProduct;
+        amount = newAmount;
+        priceSum = newPriceSum;
     }
 
-    public void setProduct(Product newProduct) {
+    public void setAmount(int newAmount){
+        amount = newAmount;
+    }
+    
+    public void setPriceSum(double newPriceSum){
+        priceSum = newPriceSum;
     }
 
-    public Integer getAmount() {
-        return 0;
+    public void setProduct(Product newProduct){
+        product = newProduct;
+    }
+
+    public int getAmount(){
+        return amount;
+    }
+    
+    public double getPriceSum(){
+        return priceSum;
     }
 
     public Product getProduct() {
-        return null;
+        return product;
     }
 }
