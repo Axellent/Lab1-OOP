@@ -1,25 +1,16 @@
 package source;
 
 public class ProductLine {
-    /**
-     * @attribute
-     */
+
     private Product product;
 
-    /**
-     * @attribute
-     */
     private int amount;
-
-    /**
-     * @attribute
-     */
     private double priceSum;
     
-    public ProductLine(Product newProduct, int newAmount, double newPriceSum){
+    public ProductLine(Product newProduct, int newAmount){
         product = newProduct;
         amount = newAmount;
-        priceSum = newPriceSum;
+        priceSum = product.getPrice() * amount;
     }
 
     public void setAmount(int newAmount){

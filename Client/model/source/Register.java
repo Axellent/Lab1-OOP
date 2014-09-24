@@ -1,20 +1,15 @@
 package source;
 
 public class Register {
-    /**
-     * @attribute
-     */
-    private ProductRegistry productRegistry;
+ 
+    private ProductRegistry productRegistry = new ProductRegistry();
+    private DiscountRegistry discountRegistry = new DiscountRegistry();
+    private Purchase purchase = new Purchase();
 
-    /**
-     * @attribute
-     */
-    private DiscountRegistry discountRegistry;
-    
-    private Purchase purchase;
-
-    public void scanProduct(Product product){
-        purchase.addProduct(product);
+    public void scanProduct(Product product, int amount){
+        for(int i = 0; i < amount; i++){
+            purchase.addProduct(product);
+        }
     }
 
     public void remProductFromLine(ProductLine line, int amount) {
@@ -23,15 +18,14 @@ public class Register {
         }
     }
 
-    public void finishPurchase() {
+    public void cancelPurchase(){
+        purchase = new Purchase();
+        System.out.println("Purchase canceled");
     }
 
-    public void cancelPurchase() {
+    private void createReciept(){
     }
 
-    private void createReciept() {
-    }
-
-    public void updateRegistries() {
+    public void updateRegistries(){
     }
 }

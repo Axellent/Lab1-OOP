@@ -1,17 +1,15 @@
 package source;
 
 public class Purchase{
-    /**
-     * @attribute
-     */
-    private double totalPrice;
-    private int nProductLines;
+
+    private double totalPrice = 0;
+    private int nProductLines = 0;
     
-    private ProductLine[] productLines;
+    private ProductLine[] productLines = new ProductLine[100];
 
     private void addProduct(Product product, int i){
         if(productLines[i] == null){
-            productLines[i] = new ProductLine(product, 1, product.getPrice());
+            productLines[i] = new ProductLine(product, 1);
             nProductLines++;
         }
         else if(productLines[i].getProduct().equals(product)){
@@ -48,7 +46,7 @@ public class Purchase{
         }
     }
 
-    public void finishPurchase() {
+    public void finishPurchase(){
     }
     
     public ProductLine getProductLine(String productName){
