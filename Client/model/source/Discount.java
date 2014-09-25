@@ -1,58 +1,44 @@
-package source;
+package Discount;
 
-public class Discount {
-    /**
-     * @attribute
-     */
-    private String discountCode;
+import java.io.Serializable;
+import java.util.Calendar;
+import source.Purchase;
 
-    /**
-     * @attribute
-     */
-    private double amount;
+public abstract class Discount implements Serializable{
+    //Variable
 
     /**
      * @attribute
      */
-    private String descr;
+    private String description;
 
     /**
      * @attribute
      */
-    private String expirationDate;
-
-    public double getDiscount(String code, ProductLine productLine) {
-        return 0;
+    private Calendar expirationDate;
+    
+    //Functions
+    
+    public Discount(Calendar expirationDate, String description){
+        this.expirationDate = expirationDate;
+        this.description = description;
     }
+    
+    public abstract void getDiscount(Purchase purchase);
 
-    public void setDiscount(String newCode, ProductLine newProductLine) {
-    }
-
-    public void setdescr(String newDescr) {
+    public void setdescr(String description) {
+        this.description = description; 
     }
 
     public String getDescr() {
-        return "";
+        return description;
     }
 
-    public String getExpirationDate() {
-        return "";
+    public Calendar getExpirationDate() {
+        return expirationDate;
     }
 
-    public void setExpirationDate(String newExpirationDate) {
-    }
-
-    public String getDiscountCode() {
-        return "";
-    }
-
-    public void setDiscountCode(String newDiscountCode) {
-    }
-
-    public double getAmount() {
-        return 0;
-    }
-
-    public void setAmount(double newAmount) {
+    public void setExpirationDate(Calendar expirationDate) {
+        this.expirationDate = expirationDate;
     }
 }
