@@ -1,0 +1,5 @@
+Receipt
+----------------------
+Antal | Pris | Product
+2      0.0   
+

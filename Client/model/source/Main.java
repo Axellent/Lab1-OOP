@@ -7,10 +7,17 @@ public class Main {
         
         Purchase purchase = new Purchase();
         Product product = new Product();
-        purchase.addProduct(product);
-        purchase.addProduct(product);
-        purchase.remProduct("");
+        Receipt receipt = new Receipt();
+        String savedReceipt;
         
-        System.out.println(purchase.getProductLine("").getAmount());
+        purchase.addProduct(product);
+        purchase.addProduct(product);
+        
+        savedReceipt = receipt.printReceipt(purchase);
+        receipt.saveReceipt(savedReceipt);
+        
+        SavePurchase savedPurchase = new SavePurchase();
+        
+        savedPurchase.savePurchase(purchase);
     }
 }
