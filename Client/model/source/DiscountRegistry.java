@@ -1,7 +1,7 @@
 package Discount;
 
-import java.util.Map;
 import java.util.Calendar;
+import java.util.Map;
 import java.util.TreeMap;
 import source.Purchase;
 
@@ -17,20 +17,23 @@ public class DiscountRegistry {
         productCode = new TreeMap<>();
     }
 
-    public double getDiscount(String code, Purchase purchase) {
-        Discount tempDiscount;
-        tempDiscount = discount.get(code);
-        if(tempDiscount == null){
-            tempDiscount = discount.get(productCode.get(code));
-        }
-        if(tempDiscount != null){
-            if(Calendar.getInstance().before(tempDiscount.getExpirationDate())){
-                return tempDiscount.getDiscount(purchase);
+    public void calcDiscount(Purchase purchase) {
+        for (String key : productCode.keySet()) {
+            if(purchase.getProductLine(key) != null){
+                Discount tempDis = discount.get(productCode.get(key));
+                if(Calendar.getInstance().before(tempDis.getExpirationDate())){
+                    tempDis.getDiscount(purchase);
+                }
             }
         }
-        return -1;
     }
-
+    
+    public void calcDiscount(Purchase purchase, String code){
+        Discount tempDis = discount.get(code);
+        if(Calendar.getInstance().before(tempDis.getExpirationDate())){
+            tempDis.getDiscount(purchase);
+        }
+    }
 
     public void addDiscount(String code, Discount discount) {
         this.discount.put(code, discount);
@@ -42,6 +45,13 @@ public class DiscountRegistry {
     }
 
     public void delDiscount(String code) {
-        
+        discount.remove(code);
+        for(Map.Entry key : productCode.entrySet()){
+            String Value;
+            Value = (String)key.getValue();
+            if(Value.equals(code)){
+                productCode.remove((String)key.getKey());
+            }
+        }
     }
 }

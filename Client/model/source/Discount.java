@@ -6,10 +6,6 @@ import source.Purchase;
 
 public abstract class Discount implements Serializable{
     //Variable
-    /**
-     * @attribute
-     */
-    private String discountCode;
 
     /**
      * @attribute
@@ -23,7 +19,12 @@ public abstract class Discount implements Serializable{
     
     //Functions
     
-    public abstract double getDiscount(Purchase purchase);
+    public Discount(Calendar expirationDate, String description){
+        this.expirationDate = expirationDate;
+        this.description = description;
+    }
+    
+    public abstract void getDiscount(Purchase purchase);
 
     public void setdescr(String description) {
         this.description = description; 
@@ -40,13 +41,4 @@ public abstract class Discount implements Serializable{
     public void setExpirationDate(Calendar expirationDate) {
         this.expirationDate = expirationDate;
     }
-
-    public String getDiscountCode() {
-        return discountCode;
-    }
-
-    public void setDiscountCode(String discountCode) {
-        this.discountCode = discountCode;
-    }
-
 }
