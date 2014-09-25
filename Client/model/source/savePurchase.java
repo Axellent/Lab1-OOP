@@ -7,12 +7,10 @@ public class SavePurchase{
     
     FileOutputStream saveFile;
     ObjectOutputStream save;
-    private String saveDate;
-    private Purchase purchase;
     
     public SavePurchase(){
         try{
-            saveFile = new FileOutputStream("saveFile.sav");
+            saveFile = new FileOutputStream("savedPurchase.sav");
             save = new ObjectOutputStream(saveFile);
             
         }catch(Exception e){

@@ -1,6 +1,8 @@
 package source;
 
-public class ProductLine {
+import java.io.Serializable;
+
+public class ProductLine implements Serializable{
 
     private Product product;
 

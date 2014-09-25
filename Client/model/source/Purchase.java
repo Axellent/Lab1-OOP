@@ -1,6 +1,8 @@
 package source;
 
-public class Purchase{
+import java.io.Serializable;
+
+public class Purchase implements Serializable{
 
     private double totalPrice = 0;
     private int nProductLines = 0;
@@ -45,9 +47,6 @@ public class Purchase{
             }
         }
     }
-
-    public void finishPurchase(){
-    }
     
     public ProductLine getProductLine(String productName){
         for(int i = 0; i < nProductLines; i++){
@@ -56,5 +55,17 @@ public class Purchase{
             }
         }
         return null;
+    }
+    
+    public ProductLine[] getAllProductLines(){
+        return productLines;
+    }
+    
+    public void setTotalPrice(double newTotalPrice){
+        totalPrice = newTotalPrice;
+    }
+    
+    public int getNProductLines(){
+        return nProductLines;
     }
 }

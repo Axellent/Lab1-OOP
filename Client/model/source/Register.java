@@ -5,6 +5,7 @@ public class Register {
     private ProductRegistry productRegistry = new ProductRegistry();
     private DiscountRegistry discountRegistry = new DiscountRegistry();
     private Purchase purchase = new Purchase();
+    Receipt receipt = new Receipt();
 
     public void scanProduct(Product product, int amount){
         for(int i = 0; i < amount; i++){
@@ -22,8 +23,17 @@ public class Register {
         purchase = new Purchase();
         System.out.println("Purchase canceled");
     }
+    
+    public void finishPurchase(){
+        SavePurchase savedPurchase = new SavePurchase();
+        
+        savedPurchase.savePurchase(purchase);
+        createReceipt();
+    }
 
-    private void createReciept(){
+    private void createReceipt(){
+        String savedReceipt = receipt.printReceipt(purchase);
+        receipt.saveReceipt(savedReceipt);
     }
 
     public void updateRegistries(){
