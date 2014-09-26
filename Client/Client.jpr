@@ -86,6 +86,7 @@
             <hash>
                <url n="content-folder-url" path="model/source/"/>
                <list n="pattern-filters">
+                  <string v="+source/SavePurchase.java"/>
                   <string v="+source/Main.java"/>
                   <string v="+source/Non_Perishable.java"/>
                   <string v="+source/XforYifZ.java"/>

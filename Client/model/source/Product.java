@@ -3,48 +3,46 @@ package source;
 import java.io.Serializable;
 
 public class Product implements Serializable{
-    /**
-     * @attribute
-     */
     private Integer EAN;
-    
-    private String name;
-
-    /**
-     * @attribute
-     */
     private String descr;
-
-    /**
-     * @attribute
-     */
     private double price;
 
+    public Product(Integer EAN, String descr, double price) {
+        this.EAN = EAN;
+        this.descr = descr;
+        this.price = price;
+    }
+    
+    public Product() {
+    }
+
+    //Author: Gustav Ernstsson
     public Integer getEAN() {
-        return 0;
-    }
-    
-    public String getName(){
-        return "";
+        return EAN;
     }
 
+    //Author: Gustav Ernstsson
     public String getDescr() {
-        return "";
+        return descr;
     }
 
+    //Author: Gustav Ernstsson
     public double getPrice() {
-        return 0;
+        return price;
     }
 
+    //Author: Gustav Ernstsson
     public void setEAN(Integer newEAN) {
-    }
-    
-    public void setName(String newName) {
+        EAN = newEAN;
     }
 
+    //Author: Gustav Ernstsson
     public void setDescr(String newDescr) {
+        descr = newDescr;
     }
 
+    //Author: Gustav Ernstsson
     public void setPrice(double newPrice) {
+        price = newPrice;
     }
 }

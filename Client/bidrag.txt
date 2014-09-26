@@ -1,0 +1,24 @@
+Metoder av Gustav Ernstsson:
+
+mainMenu
+createNewPurchase
+calculateTotalSale
+saveAndClose
+resetTotalSales
+getBestBeforeDate
+setBestBeforeDate
+getEAN
+getDescr
+getPrice
+setEAN
+setDescr
+setPrice
+getProductFromReg
+delProductFromReg
+addProduct
+loadProductRegistry
+getProductRegistry
+addPurchase
+getTotalPurchases
+getPurchases
+resetPurchases

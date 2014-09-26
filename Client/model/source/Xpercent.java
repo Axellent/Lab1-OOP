@@ -1,4 +1,4 @@
-package Discount;
+package source;
 
 import java.util.Calendar;
 import source.Purchase;
@@ -15,6 +15,7 @@ public class Xpercent extends Discount {
     
     @Override
     public void getDiscount(Purchase purchase){
-        
+        double discount =  1.0 - (precent / 100);
+        purchase.setTotalPrice(purchase.getTotalPrice() * discount);
     }
 }
